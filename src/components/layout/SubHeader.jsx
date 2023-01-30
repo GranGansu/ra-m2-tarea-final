@@ -17,6 +17,7 @@ function SubHeader({ ...props }) {
   return (
     <SubHeaderStyled {...props}>
       <FlexBox direction="row" gap="10px">
+        {/* Faltan label, id, onChange, etc... del select y además el label */}
         <Select>
           <option>Piso</option>
           <option>Chalet</option>
