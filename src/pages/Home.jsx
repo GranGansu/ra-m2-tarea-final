@@ -4,7 +4,7 @@ import { Grid, dimensions } from '../styles'
 export default function Home() {
   return (
     <Body>
-      <Grid padding={'20px ' + dimensions.margin}>
+      <Grid padding={dimensions.spacing}>
         <Houses />
         <div>mapa</div>
       </Grid>

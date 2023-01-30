@@ -13,23 +13,29 @@ const SubHeaderStyled = styled(FlexBox)`
   background-color: whitesmoke;
 `
 
+const Form = styled.form`
+  width: 100%;
+`
+
 function SubHeader({ ...props }) {
   return (
     <SubHeaderStyled {...props}>
       <FlexBox direction="row" gap="10px">
-        <Select>
-          <option>Piso</option>
-          <option>Chalet</option>
-          <option>Garaje</option>
-        </Select>
-        <Select>
-          <option>Madrid</option>
-          <option>Zaragoza</option>
-          <option>Barcelona</option>
-        </Select>
-        <Button color="blue" width="fit-content">
-          <Icon>search</Icon>
-        </Button>
+        <Form action="">
+          <Select id="type" placeholder="Piso, chalet o garaje..">
+            <option>Piso</option>
+            <option>Chalet</option>
+            <option>Garaje</option>
+          </Select>
+          <Select id="city" placeholder="Madrid, Zaragoza, o Barcelona">
+            <option>Madrid</option>
+            <option>Zaragoza</option>
+            <option>Barcelona</option>
+          </Select>
+          <Button onSubmit={() => {}} color="blue" width="fit-content">
+            <Icon>search</Icon>
+          </Button>
+        </Form>
       </FlexBox>
     </SubHeaderStyled>
   )
